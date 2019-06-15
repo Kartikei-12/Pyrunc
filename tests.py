@@ -7,12 +7,16 @@ import sys
 import unittest
 import HtmlTestRunner
 
+# Project Module(s)
+from Pyrunc import Pyrunc
+
 # Utility methods
 from utility import update_readme, clear_trailling_space
 
 
 class DummyTests(unittest.TestCase):
-    # Tests for project Connect-N.
+    """Tests for project Pyrunc module"""
+
     def setUp(self):
         """setUp"""
         pass
@@ -24,6 +28,27 @@ class DummyTests(unittest.TestCase):
     def test_dummy(self):
         """Dummy Test"""
         self.assertEqual(2 + 2, 4)
+
+
+class PyruncTests(unittest.TestCase):
+    """Testing Pyrunc module"""
+
+    def setUp(self):
+        """setUp"""
+        self.pr_c = Pyrunc()
+
+    def tearDown(self):
+        """tearDown"""
+        del self.pr_c
+
+    def test_simple_mathematical_formula(self):
+        """Testing on simple mathematical formula"""
+        obj_id, obj = self.pr_c.build(
+            """int two_number_adder(int a, int b) {
+            return a+b;
+        }"""
+        )
+        self.assertEqual(obj.two_number_adder(5, 9), 14)
 
 
 def main():
@@ -43,7 +68,7 @@ def main():
         del sys.argv[i]
 
     testRunner = HtmlTestRunner.HTMLTestRunner(
-        verbosity=2,
+        verbosity=3,
         descriptions=False,
         open_in_browser=False,
         combine_reports=True,

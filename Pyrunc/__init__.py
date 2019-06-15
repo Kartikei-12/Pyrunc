@@ -5,6 +5,8 @@ import os
 import subprocess
 from ctypes import CDLL
 
+COUNT = 0
+
 
 class Pyrunc:
     """Pyrunc package to embeed C code directly in python script"""
@@ -22,13 +24,15 @@ class Pyrunc:
 
         Returns:
             shared object: Shared object linking C code to python"""
+        global COUNT
         with open("code.c", "w") as code_file:
             code_file.write(c_code)
-        command = "gcc -w -shared -fPIC code.c -o shobj" + str(len(self.objs)) + ".dll"
+        command = "gcc -w -shared -fPIC code.c -o shobj" + str(COUNT) + ".dll"
         a = subprocess.run(command.split(" "), stdout=subprocess.PIPE).stdout.decode(
             "utf-8"
         )
-        shared_object = CDLL("shobj" + str(len(self.objs)) + ".dll")
+        shared_object = CDLL("shobj" + str(COUNT) + ".dll")
+        COUNT += 1
         self.objs.append(shared_object)
         os.remove("code.c")
         return len(self.objs) - 1, shared_object

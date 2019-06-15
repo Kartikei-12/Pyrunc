@@ -69,8 +69,8 @@ Currently only runs C code not C++ code as ctypes python module only supports C 
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Unittest Results</h2>
-                <p class='attribute'><strong>Start Time: </strong>2019-06-15 21:41:07</p>
-                <p class='attribute'><strong>Duration: </strong>1.00 s</p>
+                <p class='attribute'><strong>Start Time: </strong>2019-06-16 00:25:56</p>
+                <p class='attribute'><strong>Duration: </strong>366 ms</p>
                 <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 2</p>
             </div>
         </div>
@@ -123,7 +123,7 @@ Currently only runs C code not C++ code as ctypes python module only supports C 
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 1, Pass: 1 -- Duration: 1.00 s
+                                Total: 1, Pass: 1 -- Duration: 366 ms
                             </td>
                         </tr>
                     </tbody>

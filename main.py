@@ -89,18 +89,10 @@ csummer = obj.csummer
     return sum([i for i in range(a)])"""
 
     print("Comparison:-")
-    print(
-        "\tC  code:", timeit(stmt="csummer(30)", setup=c_setup, number=1000) * 10 ** 5
-    )
-    print(
-        "\tPython1:", timeit(stmt="psummer(30)", setup=psetup1, number=1000) * 10 ** 5
-    )
-    print(
-        "\tPython2:", timeit(stmt="psummer(30)", setup=psetup2, number=1000) * 10 ** 5
-    )
-    print(
-        "\tPython3:", timeit(stmt="psummer(30)", setup=psetup3, number=1000) * 10 ** 5
-    )
+    print("\tC  code:", timeit(stmt="csummer(30)", setup=c_setup, number=1000))
+    print("\tPython1:", timeit(stmt="psummer(30)", setup=psetup1, number=1000))
+    print("\tPython2:", timeit(stmt="psummer(30)", setup=psetup2, number=1000))
+    print("\tPython3:", timeit(stmt="psummer(30)", setup=psetup3, number=1000))
 
 
 if __name__ == "__main__":

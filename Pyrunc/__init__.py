@@ -1,5 +1,7 @@
 """Pyrunc main package code"""
 
+__author__ = "Kartikei Mittal"
+
 # Python module(s)
 import os
 import subprocess

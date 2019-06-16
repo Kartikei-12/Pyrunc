@@ -44,3 +44,14 @@ def clear_trailling_space():
     del dirs
     del file_name
     del temporary_variable
+
+    def get_and_update_version():
+        """Version fetcher"""
+        with open("version.txt", "r") as f:
+            v_old = int(f.read())
+            f.close()
+        with open("version.txt", "w") as f:
+            v_new = str(v_old + 1)
+            f.write(v_new)
+            return v_new
+        return None

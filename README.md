@@ -1,10 +1,10 @@
 # Pyrunc
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dc22a8634c3d48a3be630b7e7bba45c3)](https://www.codacy.com/app/Kartikei-12/Pyrunc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kartikei-12/Pyrunc&amp;utm_campaign=Badge_Grade)
 ![Travis (.org)](https://img.shields.io/travis/Kartikei-12/Pyrunc.svg)
 ![Codecov](https://img.shields.io/codecov/c/github/Kartikei-12/Pyrunc.svg)
+![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)
 <hr>
 
 ## Introduction
@@ -69,8 +69,8 @@ Currently only runs C code not C++ code as ctypes python module only supports C 
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Unittest Results</h2>
-                <p class='attribute'><strong>Start Time: </strong>2019-06-16 00:25:56</p>
-                <p class='attribute'><strong>Duration: </strong>366 ms</p>
+                <p class='attribute'><strong>Start Time: </strong>2019-06-16 09:59:21</p>
+                <p class='attribute'><strong>Duration: </strong>1.14 s</p>
                 <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 2</p>
             </div>
         </div>
@@ -123,7 +123,7 @@ Currently only runs C code not C++ code as ctypes python module only supports C 
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 1, Pass: 1 -- Duration: 366 ms
+                                Total: 1, Pass: 1 -- Duration: 1.14 s
                             </td>
                         </tr>
                     </tbody>
